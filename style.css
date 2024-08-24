@@ -9,12 +9,14 @@ body{
 }
 
 img{
-    height: 40vh;
-    width: 22vw;
+    height: 39vh;
+    width: 18vw;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
 }
 
 :root{
-    --font: 'New Amsterdam', 'Roboto';
+    --font: 'New Amsterdam', 'Roboto', 'Ubuntu', 'Teko', 'Rubik', 'Roboto Condensed', 'Raleway';
     --font-color: white;
 }
 
@@ -81,7 +83,7 @@ h2{
     width: 60em;
     border-radius: 10px;
     position: relative;
-    left: 30vw;
+    left: 28vw;
     bottom: 70vh;
 }
 
@@ -121,6 +123,30 @@ h2{
     align-items: center;
 }
 
-.qualities table{
-    border-spacing: 30px;
+.nav ul{
+    position: relative;
+    left: 80vw;
+    top: 3.9vh;
+    font-family: var(--font);
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    font-size: clamp(1rem, 1.2rem, 2rem);
 }
+
+.nav ul li{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.nav ul li a{
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    
+    
+}
+
+
+
