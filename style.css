@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+}
+
+body{
+    background-color: #404040;
+}
+
+img{
+    height: 40vh;
+    width: 22vw;
+}
+
+:root{
+    --font: 'New Amsterdam', 'Roboto';
+    --font-color: white;
+}
+
+.profile{
+    margin: 2em;
+}
+
+h1{
+    font-family: var(--font);
+    color: var(--font-color);
+    margin-top: 1.6em;
+}
+
+.info{
+    font-family: 'Roboto';
+    color: var(--font-color);
+}
+
+th{
+    color: var(--font-color);
+    padding: 10px;
+}
+
+.content{
+    border: 2px solid white;
+    height: 100px;
+}
+
+.answer{
+    font-family: 'Roboto';
+    color: var(--font-color);
+}
+
+.answer td{
+    width: 15em;
+}
+
+h2{
+    font-family: var(--font);
+    color: var(--font-color);
+}
+
+.background{
+    position: relative;
+    top: 1.8em;
+}
+
+.education{
+    font-family: 'Roboto';
+    color: var(--font-color);
+    list-style: none;
+}
+
+.qualities{
+    height: 20em;
+    width: 60em;
+    border: 4px solid white;
+    border-radius: 10px;
+    position: relative;
+    left: 40vw;
+    bottom: 70vh;
+}
+
+.skills th{
+    width: 100vw;
+    font-family: var(--font);
+    letter-spacing: 2px;
+}
+
+.skills-input{
+    list-style: none;
+    font-family: 'Roboto';
+}
+
+.interest-input li{
+    list-style: none;
+    font-family: 'Roboto';
+}
+
+.affiliation-input li{
+    font-family: 'Roboto';
+    list-style: none;
+}
+
+.personal-qualities li{
+    font-family: 'Roboto';
+    list-style: none;
+}
+
+.schedule{
+    height: 400px;
+    width: 400px;
+    border: 3px solid white;
+    position: relative;
+    top: -30vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualities table{
+    border-spacing: 30px;
+}
