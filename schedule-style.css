@@ -2,12 +2,71 @@
     --font: 'New Amsterdam', 'Roboto', 'Ubuntu', 'Teko', 'Rubik', 'Roboto Condensed', 'Raleway';
 }
 
+body{
+    background-image: url(PurpleAnimeCity.png);
+}
+
+table{
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 2px;
+    background-color: aqua;
+}
+
+th{
+    font-family: 'Prompt', var(--font);
+}
+
+td{
+    font-family: 'Open Sans', var(--font);
+}
+
 .schedule{
     height: 400px;
     width: 400px;
     position: relative;
-    top: 10vh;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+.nav ul{
+    position: relative;
+    top: 3.9vh;
+    font-family: var(--font);
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    font-size: clamp(1rem, 1.2rem, 2rem);
+}
+
+.nav ul li button{
+    padding: 10px;
+    font-family: 'Quicksand', var(--font);
+    font-weight: bolder;
+    transition: 0.5s;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    
+}
+
+.nav ul li a{
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: black;   
+    transition: 0.5s;
+
+}
+
+.nav ul li button:hover{
+    background-color: black; 
+    color: aliceblue;
+}
+
+.nav ul li button a:hover{
+    background-color: black; 
+    color: aliceblue;
 }
