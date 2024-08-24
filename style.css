@@ -18,6 +18,14 @@ img{
     --font-color: white;
 }
 
+.edu{
+    letter-spacing: 2px;
+}
+
+.name{
+    letter-spacing: 2px;
+}
+
 .profile{
     margin: 2em;
 }
