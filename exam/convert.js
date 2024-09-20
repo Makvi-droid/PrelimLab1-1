@@ -7,14 +7,14 @@ const lbs = 2.20462;
 
 function kgTolbs(){
 
-    let weightKg = input.value;
+    let weightKg = parseFloat(input.value);
     return weightKg * lbs;
 
 }
 
 function lbsToKg(){
 
-    let weightLbs = input.value;
+    let weightLbs = parseFloat(input.value);
     return weightLbs / lbs; 
 
 }
