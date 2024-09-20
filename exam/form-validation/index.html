@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        button{
+            cursor: pointer;
+        }
+
+        .container{
+            width: 19vw;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.8em;
+            display: block;
+            margin-top: 2px;
+        }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="get" id="form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" placeholder="USERNAME" id="username">
+                <span class="error" id="usernameError"></span>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="PASSWORD" id="password">
+                <span class="error" id="passwordError"></span>
+            </div>
+            <button type="submit" id="submitBtn">Sign In</button>
+        </form>
+    </div>
+    
+</body>
+</html>

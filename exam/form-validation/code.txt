@@ -1,0 +1,14 @@
+function errorMsgs(){
+        if(username.value === '' || username.value == null){
+            errorUser.textContent = 'Username required';
+        }
+
+        if(password.value === '' || password == null){
+            errorPassword.textContent = 'Password required';
+        }
+    }
+
+    submitBtn.addEventListener('click', function(){
+        errorMsgs();
+        e.preventDefault();
+    });
