@@ -2,28 +2,30 @@ let kgBtn = document.getElementById('kgToLbsBtn');
 let lbsBtn = document.getElementById('lbsToKgBtn');
 let input = document.getElementById('convert');
 let answer = document.querySelector('.answer');
+const kg = 0.453592;
+const lbs = 2.20462;
 
 function kgTolbs(){
 
-    const kg = input.value;
-    return kg * 2.20462;
+    let weightKg = input.value;
+    return weightKg * lbs;
 
 }
 
 function lbsToKg(){
 
-    const lbs = input.value;
-    return lbs * 0.45359237;
+    let weightLbs = input.value;
+    return weightLbs / lbs; 
 
 }
 
 kgBtn.addEventListener('click', function(){
     
-    answer.textContent = `Your weight in kg is ${kgTolbs()}`;
+    answer.textContent = `Your weight in kg to lbs is ${kgTolbs()}`;
 
 });
 
 lbsBtn.addEventListener('click', function(){
-    answer.textContent = `Your weight in lbs is ${lbsToKg()}`
+    answer.textContent = `Your weight in lbs to Kg is ${lbsToKg()}`
 });
 
